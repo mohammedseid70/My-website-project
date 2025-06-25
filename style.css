@@ -5,8 +5,11 @@ body {
   border:double red;
   justify-content: center;
   padding-top: 50px;
-  height:;
-margin-left:70px;
+  
+}
+
+h2{
+margin:50px;
 }
 
 .card {
