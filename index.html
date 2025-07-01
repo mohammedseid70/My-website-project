@@ -2,27 +2,46 @@
 <html>
 <head>
   <style>
-    .me a {
-      margin-right: 15px;
-      text-decoration: none;
-      text-align: center;
-      color: green;
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
     }
+
     .me {
+      background-color: #f1f1f1;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      text-align: center;
+      padding: 10px 0;
+      z-index: 1000;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .me a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: green;
+      font-size: 18px;
+    }
+
+    .me a:hover {
+      color: darkgreen;
+    }
+
+    .content {
+      padding-top: 80px; /* This makes sure your content is not hidden behind the fixed menu */
       text-align: center;
     }
   </style>
 </head>
 <body>
+
   <div class="me">
-    <h1>
-      <a href="#">HOME</a>
-      <a href="About-me.html">About Developer</a>
-      <a href="#">C++</a>
-      <a href="#">Java</a>
-    </h1>
+    <a href="#">HOME</a>
+    <a href="About-me.html">About Developer</a>
+    <a href="#">C++</a>
+    <a href="#">Java</a>
   </div>
 
-  <h2>WELCOME TO MY WEBSITE</h2>
-</body>
-</html>
+  <div
